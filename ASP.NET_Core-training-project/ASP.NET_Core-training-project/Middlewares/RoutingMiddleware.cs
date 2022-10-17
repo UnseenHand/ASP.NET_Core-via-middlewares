@@ -8,13 +8,13 @@
     public async Task InvokeAsync(HttpContext context)
     {
         string path = context.Request.Path;
-        if (path == "/index")
+        if (path == "/index" || path == @"^/index/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}$")
         {
-            await context.Response.WriteAsync("Home Page");
+            await next.Invoke(context);
         }
         else if (path == "/about")
         {
-            await context.Response.WriteAsync("About Page");
+            await next.Invoke(context);
         }
         else
         {

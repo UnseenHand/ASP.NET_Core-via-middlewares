@@ -11,4 +11,9 @@
     <Folder Include="Files\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\html\index.html" />
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
 </Project>
