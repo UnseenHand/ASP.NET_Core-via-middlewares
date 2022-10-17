@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Files\" />
+    <Folder Include="wwwroot\uploadedfiles\images\" />
   </ItemGroup>
 
   <ItemGroup>
